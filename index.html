@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>The Materialize Example</title>
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+
+    <style>
+        body {
+            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row">
+            <div class="col m1 l2 gainsboro">
+                &nbsp;
+            </div>
+            <div class="col s12 m10 l8">
+                <div class="card-panel teal lighten-1">
+                    <h4 class="white-text">TASKY</h4>
+                    <p class="grey-text text-lighten-2">Handy to-do list</p>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="row">
+                            <form id="task-form">
+                                <div class="input-field col s12">
+                                    <input id="task" type="text" class="validate">
+                                    <label for="task">New task description</label>
+                                </div>
+                                <div class="col s12">
+                                    <!-- <input type="submit" value="Add Task" class="btn btn-large"> -->
+                                    <button type="submit" class="btn btn-large">
+                                        <i class="material-icons left">add</i>Add Task
+                                    </button>
+                                    
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="card-action">
+                        <h5>Tasks</h5>
+                        <div class="input-field col s12">
+                            <input id="filter" type="text" class="validate">
+                            <label for="filter">Filter tasks</label>
+                        </div>
+                        <ul class="collection current-tasks"></ul>
+                        <a href="#" class="btn btn-small teal darken-1 grey-text text-lighten-2 ">
+                            <i class="material-icons left">clear</i>Clear All</a>
+                        <a href="#" class="btn btn-small teal darken-1 grey-text text-lighten-2 ">
+                            <i class="material-icons left">delete</i>Clear Completed </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col m1 l2 gainsboro">
+                &nbsp;
+            </div>
+        </div>
+    </div>
+
+    <!-- JS insertion -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
