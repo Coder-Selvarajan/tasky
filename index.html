@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>The Materialize Example</title>
+    <title>Tasky - Todo app</title>
     <meta name="viewport" content="width = device-width, initial-scale = 1">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
@@ -18,10 +18,10 @@
     <div class="container">
 
         <div class="row">
-            <div class="col m1 l2 gainsboro">
+            <div class="col m1 l3 gainsboro">
                 &nbsp;
             </div>
-            <div class="col s12 m10 l8">
+            <div class="col s12 m10 l6">
                 <div class="card-panel teal darken-1">
                     <h4 class="white-text">TASKY</h4>
                     <p class="grey-text text-lighten-2">Handy to-do list</p>
@@ -51,15 +51,19 @@
                             <label for="filter">Filter tasks</label>
                         </div>
                         <ul class="collection current-tasks"></ul>
-                        <a href="#" class="clear-all btn btn-small teal darken-2 grey-text text-lighten-2 ">
-                            Delete All</a>
-                        <a href="#" class="clear-old btn btn-small teal darken-2 grey-text text-lighten-2 ">
-                            Clear Old </a>
+                        <div class="row">
+                            <div class="col s6">
+                                <a href="#" class="clear-all btn btn-small teal darken-2 grey-text text-lighten-2 ">Delete_All</a>
+                            </div>
+                            <div class="col s6">
+                                <a href="#" class="clear-old btn btn-small teal darken-2 grey-text text-lighten-2 ">Clear_Old </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col m1 l2 gainsboro">
+            <div class="col m1 l3 gainsboro">
                 &nbsp;
             </div>
         </div>
