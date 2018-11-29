@@ -1,5 +1,5 @@
 # Tasky
-To-do list app in core Javascript 
+Handy to-do list app built with core Javascript & materialize-css
 
 <br/>
 
